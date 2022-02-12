@@ -1,0 +1,3 @@
+[submodule "Ultrasonic"]
+	path = libs/Ultrasonic
+	url = https://github.com/RoboCore/Ultrasonic
