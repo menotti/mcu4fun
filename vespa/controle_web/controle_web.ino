@@ -73,12 +73,12 @@ void setup(){
   // configura o ponto de acesso (Access Point)
   Serial.print("Configurando a rede Wi-Fi... ");
   const char *mac = WiFi.macAddress().c_str(); // obtem o MAC
-  char ssid[] = "Vespa-xxxxx"; // mascara do SSID (ate 63 caracteres)
-  char *senha = "rc-vespa"; // senha padrao da rede (no minimo 8 caracteres)
+  char ssid[] = "RoboNotti"; // mascara do SSID (ate 63 caracteres)
+  char *senha = "asdfg123"; // senha padrao da rede (no minimo 8 caracteres)
   // atualiza o SSID em funcao do MAC
-  for(uint8_t i=6 ; i < 11 ; i++){
-    ssid[i] = mac[i+6];
-  }
+  // for(uint8_t i=6 ; i < 11 ; i++){
+    // ssid[i] = mac[i+6];
+  // }
   if(!WiFi.softAP(ssid, senha)){
     Serial.println("ERRO");
     // trava a execucao
