@@ -59,7 +59,6 @@ void setup() {
 void loop() {
   // Se perdeu o jogo reinicializamos todas as variáveis.
   if (perdeu_o_jogo) {
-    int sequencia[100] = {};
     rodada_atual = 0;
     passo_atual_na_sequencia = 0;
     perdeu_o_jogo = false;
